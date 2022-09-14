@@ -1,0 +1,189 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tabel JQuery</title>
+	<style>
+		body {
+    background-color: rgb(206, 202, 202);
+    border: 7;
+}
+
+h1 {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+h1:hover {
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+}
+
+table th, table td {
+    border: 1px solid;
+    padding: 10px;
+}
+
+table th {
+    background-color: rgb(180, 91, 152);
+}
+
+table tr {
+    background-color: white;
+}
+
+table tr:hover {
+    background-color: rgb(204, 136, 168);
+}
+
+.nama:hover {
+    cursor: pointer;
+}
+
+.alamat:hover {
+    cursor: pointer;
+}
+
+.kembali {
+    background-color: rgb(144, 100, 194);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.kembali:hover {
+    cursor: pointer;
+    background-color: rgb(228, 105, 228);
+}
+
+.hapus {
+    background-color: #35A9BD;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.hapus:hover {
+    cursor: pointer;
+    background-color: red;
+}
+.content{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+.btn-back{
+	padding: 10px;
+	background-color: #35A9BD;
+	border-radius: 8px;
+	border: none;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+	transition: .3s;
+}
+.btn-back:hover{
+	transition: .1s;
+	scale: 1.1;
+}
+.btn-back a {
+	color: black;
+	text-decoration: none;
+}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<h1>5 Teman Terbaik</h1>
+		<table>
+			<thead>
+				<tr>
+					<th width="30">No</th>
+					<th>Nama</th>
+					<th>Alamat</th>
+					<th>Aksi</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr id="row_1">
+					<td>1</td>
+					<td class="nama">Rotika</td>
+					<td class="alamat">Plered</td>
+					<td><button class="hapus" id="hapus_1">Delete</button></td>
+				</tr>
+				<tr id="row_2">
+					<td>2</td>
+					<td class="nama">Nuraeni</td>
+					<td class="alamat">Pegambiran</td>
+					<td><button class="hapus" id="hapus_2">Delete</button></td>
+				</tr>
+				<tr id="row_3">
+					<td>3</td>
+					<td class="nama">Syifa</td>
+					<td class="alamat">Kedawung</td>
+					<td><button class="hapus" id="hapus_3">Delete</button></td>
+				</tr>
+				<tr id="row_4">
+					<td>4</td>
+					<td class="nama">Qonita</td>
+					<td class="alamat">Sumber</td>
+					<td><button class="hapus" id="hapus_4">Delete</button></td>
+				</tr>
+				<tr id="row_5">
+					<td>5</td>
+					<td class="nama">Sariah</td>
+					<td class="alamat">Palimanan</td>
+					<td><button class="hapus" id="hapus_5">Delete</button></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<button class="btn-back"><a href="../index.html">Kembali Ke Menu</a></button>
+
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.nama').click(function(){
+				let nama = $(this).text()
+				let edit = prompt('Edit Nama:', nama)
+
+				if(!edit) return
+				$(this).text(edit)
+			})
+			$('.alamat').click(function(){
+				let alamat = $(this).text()
+				let edit = prompt('Edit Alamat:', alamat)
+
+				if(!edit) return
+				$(this).text(edit)
+			})
+			$('.hapus').click(function(){
+				let yakin = confirm('Anda Yakin Ingin Menghapusnya?')
+
+				if(!yakin) return
+				let id = $(this).prop('id')
+				let rid = id.split('_')
+				let baris = rid[1]
+				$('#row_'+baris).slideUp()
+			})
+		})
+	</script>
+</body>
+</html>
