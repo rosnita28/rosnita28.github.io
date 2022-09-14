@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table Sederhana</title>
+	<h1>5 TEMAN TERBAIK DI IKMI</h1>
+
+<style>
+	td {
+		background: brown;
+		cursor: pointer;
+		transition: .2s;
+	}
+
+	td:hover{
+		background: burlywood;
+	}
+	.tabelku { 
+		width: 100%;
+		max-width: 500px;
+	 }
+</style>
+
+<table class="tabelku">
+	<tr>
+		<td>No</td>
+		<td>Nama</td>
+		<td>Alamat</td>
+	</tr>
+
+	<tr id="row__1">
+		<td>1</td>
+		<td class="nama_mhs">Rotika</td>
+		<td>Plered</td>
+	</tr>
+
+	<tr id="row__2">
+		<td>2</td>
+		<td class="nama_mhs">Nuraeni</td>
+		<td>Pegambiran</td>
+	</tr>
+
+	<tr id="row__3">
+		<td>3</td>
+		<td class="nama_mhs">Syifa</td>
+		<td>Kedawung</td>
+	</tr>
+
+	<tr id="row__4">
+		<td>4</td>
+		<td class="nama_mhs">Qonita</td>
+		<td>Sumber</td>
+	</tr>
+
+	<tr id="row__5">
+		<td>5</td>
+		<td class="nama_mhs">Sariah</td>
+		<td>Palimanan</td>
+	</tr>
+</table>
+
+<script> 
+	$(document).ready(function(){
+		// alert(0)
+		$('.nama_mhs').click(function(){
+			// alert(1)
+			let isi = $(this).text();
+			// alert(isi);
+
+			let isi2 = prompt('Ubah dengan:', isi);
+			if(!isi2) return;
+			// alert(isi2);
+
+			$(this).text(isi2)
+		})
+		$('.hapus').click(function(){
+			// alert(1)
+			let yakin = confirm('Yakin mau menghapus?');
+			if(!yakin) return;
+
+			let id = $(this).prop('id');
+			// alert(id);
+			
+			let rid = id.split('__');
+			let baris_ke = rid[1];
+
+			// alert(baris_ke);
+			
+			$('#row__'+baris_ke).slideUp()
+
+
+			// alert('Anda yakin')
+		})
+	})
+</script>
