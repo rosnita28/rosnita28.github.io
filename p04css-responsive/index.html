@@ -1,229 +1,209 @@
-
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_rosnita.css" class="css">
-    <title>Form PMB | Responsive</title>
+    <link rel="stylesheet" href="punya_rosnita.css">
+    <title>Resonsive|Form Pendaftaran PMB</title>
 </head>
+<body style="background-color:rgb(191, 212, 236);"></body>
 <body>
-    <body style="background-color:rgb(189, 217, 245);"></body>
-    <img src="cop-surat.png" width="100%">
-	<h1>Formulir Pendaftaran Mahasiswa Baru</h1>
-	<h3>Petunjuk Pengisian:</h3>
-	<div class="petunjuk">
-		<p>1. Isilah data dengan cermat, teliti dan benar</p>
-		<p>2. Isilah dengan huruf balok</p>
-		<p>3. Salah penulisan pada pengisian formulir ini akan berakibat kesalahan pada penulisan data Saudara pada ijazah</p><br>
+  <div class="kopsurat">
+    <img src="cop-surat.jpg" width="100%" />
+    <hr />
+    <h2 align="center" class="title">Formulir Pendaftaran Mahasiswa Baru</h2>
+    <h4 class="penulisan">Petunjuk Pengisian :</h4>
+    <ol>
+      <li>Isilah data dengan cermat, teliti dan benar</li><br>
+      <li>Isilah dengan huruf kapital</li><br>
+      <li>Salah penulisan pada pengisian formulir ini akan berakibat kesalahan pada penulisan data Saudara pada ijazah
+      </li>
+    </ol>
+
+    <hr />
+      <h4 class="penulisan" style="margin-top: 0; margin-bottom: 0">
+        DATA DIRI :
+      </h4>
+
+    <div class="punya_rosnita">
+      <div class="form1">
+        <label class="label" for="no_pendaftaran">1. Nomor Pendaftaran</label>
+        <div class="input">
+          <input type="text" id="no_pendaftaran" name="nomor pendaftaran" />
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="nama">2. Nama</label>
+        <div class="input">
+          <input type="text" id="nama" name="nama" />
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="tanggal ujian">3. Tanggal Ujian</label>
+        <div class="input">
+          <input type="date" name="tanggal_ujian" id="tanggal_ujian" />
+        </div>
+      </div>
+      <br>
+      <div class="amalia">
+        <label class="label" for="jenis Kelamin">4. Jenis Kelamin</label>
+        <div class="input">
+          <input type="radio" name="jeniskelamin" value="Pria" class="radio">Pria
+          <input type="radio" name="jeniskelamin" value="Wanita" class="radio">Wanita
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="Jenjang/jurusan">5. Jenjang / Jurusan</label>
+        <div class="input">
+            <select>
+              <option value=""></option>
+              <option value="Teknik Informatika(S1)">TI(S1)</option>
+              <option value="Rekayasa Perangkat Lunak(S1)">RPL(S1)</option>
+              <option value="Sistem Informasi (S1)">SI(S1)</option>
+              <option value="Komputerisasi Akutansi(D3)">KA(D3)</option>
+              <option value="Manajemen Informasi(D3)">MI(D3)</option>
+            </select> 
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="Waktu Kuliah">6. Waktu Kuliah</label>
+        <div class="input">
+          <input type='radio' name='Pagi' value='Pagi'>Pagi
+          <input type='radio' name='Sore' value='Sore'>Sore
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="agama">7. Agama</label>
+        <div class="input">
+          <input type="text" name="agama" id="agama" />
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for=" Tempat Lahir">8. Tempat Lahir</label>
+        <div class="input">
+          <input type="text" name="tempat_lahir" />
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="tanggal_lahir">9. Tanggal Lahir</label>
+        <div class="input">
+          <input type="date" name="tanggal_lahir" />
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="alamat">10. Alamat</label>
+        <div class="input">
+          <input type="text" name="alamat" id="alamat" />
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="rt/rw">11. RT / RW</label>
+        <div class="input">
+          <input type="text" name="alamat" id="rt/rw" />
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="kota">12. Kota / Kabupaten</label>
+        <div class="input">
+          <input type="text" name="alamat" id="kota" />
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="Kewarganegaraan">13. Kewarganegaraan</label>
+        <div class="input">
+          <input type="radio" name="kewarganegaraan" value="WNI"> WNI
+          <input type="radio" name="kewarganegaraan" value="WNA"> WNA
+      </div>
+      <br>
+      <div class="punya_rosnita">
+          <label for="golongan darah" class="gol_darah">14. Golongan Darah :</label>
+          <select name="golongan darah" id="golongan darah">
+            <option value=""></option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="AB">AB</option>
+            <option value="O">O</option>
+          </select>
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="Nama Orang Tua / Wali">15. Nama Orang Tua / Wali</label>
+        <div class="input">
+          <input type="text" name="alamat" id="wali" />
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="Pekerjaan Orang Tua">16. Pekerjaan Orang Tua</label>
+        <div class="input">
+            <select>
+                <option value=""></option>
+                <option value="PNS">PNS</option>
+                <option value="Wirausaha">Wirausaha</option>
+                <option value="Wiraswasta">wiraswasta</option>
+                <option value="Lainnya">Lainnya</option>
+            </select> 
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="Asal SMK/SMA/MA">17. Asal Sekolah (SMA/MA/SMK)</label>
+        <div class="input">
+          <input type="text" name="Asal SMK/SMA/MAt" id="Asal SMA/MA/SMK" />
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="Status Sekolah">18. Status Sekolah</label>
+        <div class="input">
+          <input type="checkbox" name="Status Sekolah" value="Negeri"> Negeri
+          <input type="checkbox" name="Status Sekolah" value="Swasta"> Swasta
+          <input type="checkbox" name="Status Sekolah" value="Internasional"> Internasional
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="jurusan">19. Jurusan</label>
+        <div class="input">
+          <input type="text" name="jurusan" id="jurusan"/>
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="no_ijazah">20. Nomor Ijazah</label>
+        <div class="input">
+          <input type="text" name="tgl_lulus" id="no_ijazah"/>
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="tgl_lulus">21. Tanggal Lulus</label>
+        <div class="input">
+          <input type="text" name="tgl_lulus" id="tgl_lulus"/>
+        </div>
+      </div>
+      <hr>
     </div>
-    <div class="konten">
-        <form action="#">
-            <table style="border: 1px solid black;" width="100%" ></table>
-            <div class="formulir1"> 
-            <h1 class="wajib_isi">Data Pribadi</h1>
-            <div class="garis1"></div>
-        <fieldset>
-           <table>
-            <div>
-            <span align="left" valign="top">1. </span>
-            <span align="left" valign="top">Nama Lengkap</span>
-            <span> : </span>
-            <span><input type="text" class="wajib_isi" maxlength="35" placeholder="Masukan Nama" ></span>
-            </div><br>
-            <div>
-            <span align="left" valign="top" width="5">2. </span>
-            <span>Jenis Kelamin</span>
-            <span> : </span>
-            <p><input type="radio" name="jk" value="Pria" class="radio">Pria</p>
-            <p><input type="radio" name="jk" value="wanita" class="radio">Wanita</p>
-            </div><br>
-            <div>
-            <span align="left" valign="top" width="5">3. </span>
-            <span>Tempat</span>
-            <span valign="top"> : </span>
-            <span valign="top"><input type="text" class="wajib_isi" maxlength="20" placeholder="Tempat Lahir" ></span>
-            </div><br>
-            <div>
-            <span align="left" valign="top" width="5">4. </span>
-            <span>Tanggal Lahir</span>
-            <span valign="top"> : </span>
-            <input type="date" class="wajib_isi">
-            </div><br>
-            <div>
-            <span align="left" valign="top" width="5">5. </span>
-            <span>Agama</span>
-            <span valign="top"> : </span>
-            <input type="text" class="wajib_isi" maxlength="20" placeholder="Agama">
-            </div><br>
-            <div>
-            <span align="left" valign="top" width="5">6. </span>
-            <span>Nama Orang Tua</span>
-            <span valign="top"> : </span>
-            <input type="text" class="wajib_isi" maxlength="20" placeholder="Orang Tua/Wali">
-            </div><br>
-            <div>
-            <span align="left" valign="top" width="5">7. </span>
-            <span>Pekerjaan Orang tua</span>
-            <span valign="top"> : </span>
-            <select class="wajib_isi">
-                <option value=""></option>
-                <option value="PNS/TNI/POLISI">PNS</option>
-                <option value="Wiraswasta">Wirausaha</option>
-                <option value="Swasta">Swasta</option>
-                <option value="Lain-lain">Lain-lain</option>
-            </select>
-            </div><br>
-            <div>
-            <span align="left" valign="top" width="5">8. </span>
-            <span>Telp Rumah / Hp</span>
-            <span valign="top"> : </span>
-            <input type="text" class="wajib_isi" maxlength="20" placeholder="Telepon Rumah">
-            </div><br>
-            <div>
-            <span align="left" valign="top" width="5">9. </span>
-            <span>Alamat</span>
-            <span valign="top"> : </span>
-            <input type="text" class="wajib_isi" maxlength="50" placeholder="Sesuai KTP">
-            </div><br>
-            <div>
-            <span>RT/RW</span>
-            <span> : </span>
-            <input type="text" class="wajib_isi" maxlength="10" placeholder="RT/RW">
-            </div><br>
-            <div>
-            <span>Kode POS</span>
-            <span> : </span>
-            <input type="text" class="wajib_isi" maxlength="10" placeholder="Kode Pos">
-            </div><br>
-            <div>
-            <span>Kota/Kabupaten</span>
-            <span> : </span>
-            <input type="text" class="wajib_isi" maxlength="15" placeholder="Kota/Kabupaten">
-            </div><br>
-            <div>
-            <span align="left" valign="top" width="5">10. </span>
-            <span>Kewarganegaraan</span>
-            <span> : </span>
-            <p><input type="radio" name="negara" value="Pria" class="radio">WNI</p>
-            <p><input type="radio" name="negara" value="wanita" class="radio">WNA</p>
-            </div><br>
-            <div>
-            <span align="left" valign="top" width="5">11. </span>
-            <span>Gol Darah</span>
-            <span> : </span>
-            <select class="wajib_isi">
-                <option value=""></option>
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="AB">AB</option>
-                <option value="O">O</option>
-            </select>
-           </table>
-        </fieldset>
-        <br>
-            <table style="border: 1px solid black;" width="100%" ></table>
-            <h1 class="formulir2">Pendidikan Terakhir</h1>
-            <div class="garis1"></div>
-            <fieldset>
-                <table>
-                    <div>
-                    <span align="left" valign="top">1. </span>
-                    <span>Asal Sekolah</span>
-                    <span> : </span>
-                    <input type="text" class="wajib_isi" maxlength="30" placeholder="SMA/SMK/Univ">
-                    </div><br>
-                    <div>
-                        <span align="left" valign="top">2. </span>
-                        <span>Status Sekolah</span>
-                        <span> : </span>
-                        <select class="wajib_isi" >
-                            <option value=""></option>
-                            <option value="Negri">Negeri</option>
-                            <option value="Swasta">Swasta</option>
-                            <option value="Luar negri">Luar Negeri</option>
-                        </select>
-                    </div><br>
-                    <div>
-                        <span align="left" valign="top">3. </span>
-                        <span>Jurusan</span>
-                        <span> : </span>
-                        <input type="text" class="wajib_isi" maxlength="35" placeholder="Jurusan/Prodi">
-                    </div><br>
-                    <div>
-                        <span align="left" valign="top">4. </span>
-                        <span>Nomor Ijazah</span>
-                        <span> : </span>
-                        <input type="text" class="wajib_isi" maxlength="15" placeholder="00xxxxxx">
-                    </div><br>
-                    <div>
-                        <span align="left" valign="top">5. </span>
-                        <span>Tanggal Lulus</span>
-                        <span> : </span>
-                        <input type="date" class="wajib_isi">
-                    </div><br>
-                </table>
-            </fieldset><br>
-            <table style="border: 1px solid black;" width="100%" ></table>
-            <h1 class="formulir2">Pendaftaran</h1>
-            <div class="garis2"></div>
-                <form action="#">
-                    <fieldset>
-                        <table>
-                        <div>
-                            <span align="left" valign="top">1. </span>
-                            <span>Nomor Pendaftaran</span>
-                            <span> : </span>
-                            <input type="text" class="wajib_isi" maxlength="10" placeholder="00xxxxxx">
-                        </div><br>
-                        <div>
-                            <span align="left" valign="top">2. </span>
-                            <span>Tanggal Ujian</span>
-                            <span> : </span>
-                            <input type="date" class="wajib_isi">
-                        </div><br>
-                        <div>
-                            <span align="left" valign="top">3. </span>
-                            <span>Jenjang</span>
-                            <span> : </span>
-                            <select class="wajib_isi">
-                                <option value=""></option>
-                                <option value="D3">D3 (Diploma Tiga)</option>
-                                <option value="S1">S1 (Strata Satu)</option>
-                            </select>
-                        </div><br>
-                        <div>
-                            <span align="left" valign="top">4. </span>
-                             <span>Program Studi</span>
-                             <span> : </span>
-                             <select class="wajib_isi">
-                                <option value=""></option>
-                                <option value="TI">Teknik Informatika</option>
-                                <option value="RPL">Rekayasa Perangkat Lunak</option>
-                                <option value="SI">Sistem Informasi</option>
-                                <option value="MI">Manajemen Informatika</option>
-                                <option value="KA">Komputerisasi Akuntansi</option>
-                            </select>
-                        </div><br>
-                        </table>
-                    </fieldset>
-                <br>
-                <table width="100%">
-                        <div class="ttd">	
-                            <p class="ttd">Cirebon, <input type="date" name="tgl_ttd"></p>
-                        </div><br>
-                            <div>
-                                <span height="80px"></span>
-                            </div>
-                            <div>
-                                <span><input type="text" name="" placeholder="Nama Lengkap"></span>
-                            </div>
-		        </table>
-		        <br>
-                <div>
-                    <button onclick="alert('Apakah Sudah Yakin?')">Kirim</button>
-                    <button onclick="document.location.href = '../index.html'" >Kembali</button>
-                </div>
-    </body>
+    <div class="form2">
+      <p class="catatan">Catatan : *) Beri tanda centang sesuai dengan pilihan</p>
+      <div class="tanggal_pengiriman">
+        <p>Cirebon, <input type="date" name="tanggal" id="tanggal" style="width: 98px;"></p>
+        <p><input type="text" name="" placeholder="Nama Lengkap" style="width: 98px;"></p>
+      </div>
+    </div>
+    <button onclick="alert('Oke')">Kirim</button>
+  </div>
+</body>
 </html>
