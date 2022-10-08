@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="punya_rosnita.css">
+    <title>Resonsive|Form Pendaftaran PMB</title>
+</head>
+<body style="background-color:rgb(191, 212, 236);"></body>
+<body>
+  <div class="kopsurat">
+    <img src="cop-surat.png" width="100%" />
+    <hr />
+    <h2 align="center" class="title">Formulir Pendaftaran Mahasiswa Baru</h2>
+    <h4 class="penulisan">Petunjuk Pengisian :</h4>
+    <ol>
+      <li>Isilah data dengan cermat, teliti dan benar</li><br>
+      <li>Isilah dengan huruf kapital</li><br>
+      <li>Salah penulisan pada pengisian formulir ini akan berakibat kesalahan pada penulisan data Saudara pada ijazah
+      </li>
+    </ol>
+
+    <hr />
+      <h4 class="penulisan" style="margin-top: 0; margin-bottom: 0">
+        DATA DIRI :
+      </h4>
+
+    <div class="punya_rosnita">
+      <div class="form1">
+        <label class="label" for="no_pendaftaran">1. Nomor Pendaftaran</label>
+        <div class="input">
+          <input type="text" id="no_pendaftaran" name="nomor pendaftaran" />
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="nama">2. Nama</label>
+        <div class="input">
+          <input type="text" id="nama" name="nama" />
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="tanggal ujian">3. Tanggal Ujian</label>
+        <div class="input">
+          <input type="date" name="tanggal_ujian" id="tanggal_ujian" />
+        </div>
+      </div>
+      <br>
+      <div class="amalia">
+        <label class="label" for="jenis Kelamin">4. Jenis Kelamin</label>
+        <div class="input">
+          <input type="radio" name="jeniskelamin" value="Pria" class="radio">Pria
+          <input type="radio" name="jeniskelamin" value="Wanita" class="radio">Wanita
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="Jenjang/jurusan">5. Jenjang / Jurusan</label>
+        <div class="input">
+            <select>
+              <option value=""></option>
+              <option value="Teknik Informatika(S1)">TI(S1)</option>
+              <option value="Rekayasa Perangkat Lunak(S1)">RPL(S1)</option>
+              <option value="Sistem Informasi (S1)">SI(S1)</option>
+              <option value="Komputerisasi Akutansi(D3)">KA(D3)</option>
+              <option value="Manajemen Informasi(D3)">MI(D3)</option>
+            </select> 
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="Waktu Kuliah">6. Waktu Kuliah</label>
+        <div class="input">
+          <input type='radio' name='Pagi' value='Pagi'>Pagi
+          <input type='radio' name='Sore' value='Sore'>Sore
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="agama">7. Agama</label>
+        <div class="input">
+          <input type="text" name="agama" id="agama" />
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for=" Tempat Lahir">8. Tempat Lahir</label>
+        <div class="input">
+          <input type="text" name="tempat_lahir" />
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="tanggal_lahir">9. Tanggal Lahir</label>
+        <div class="input">
+          <input type="date" name="tanggal_lahir" />
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="alamat">10. Alamat</label>
+        <div class="input">
+          <input type="text" name="alamat" id="alamat" />
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="rt/rw">11. RT / RW</label>
+        <div class="input">
+          <input type="text" name="alamat" id="rt/rw" />
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="kota">12. Kota / Kabupaten</label>
+        <div class="input">
+          <input type="text" name="alamat" id="kota" />
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="Kewarganegaraan">13. Kewarganegaraan</label>
+        <div class="input">
+          <input type="radio" name="kewarganegaraan" value="WNI"> WNI
+          <input type="radio" name="kewarganegaraan" value="WNA"> WNA
+      </div>
+      <br>
+      <div class="punya_rosnita">
+          <label for="golongan darah" class="gol_darah">14. Golongan Darah :</label>
+          <select name="golongan darah" id="golongan darah">
+            <option value=""></option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="AB">AB</option>
+            <option value="O">O</option>
+          </select>
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="Nama Orang Tua / Wali">15. Nama Orang Tua / Wali</label>
+        <div class="input">
+          <input type="text" name="alamat" id="wali" />
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="Pekerjaan Orang Tua">16. Pekerjaan Orang Tua</label>
+        <div class="input">
+            <select>
+                <option value=""></option>
+                <option value="PNS">PNS</option>
+                <option value="Wirausaha">Wirausaha</option>
+                <option value="Wiraswasta">wiraswasta</option>
+                <option value="Lainnya">Lainnya</option>
+            </select> 
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="Asal SMK/SMA/MA">17. Asal Sekolah (SMA/MA/SMK)</label>
+        <div class="input">
+          <input type="text" name="Asal SMK/SMA/MAt" id="Asal SMA/MA/SMK" />
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="Status Sekolah">18. Status Sekolah</label>
+        <div class="input">
+          <input type="checkbox" name="Status Sekolah" value="Negeri"> Negeri
+          <input type="checkbox" name="Status Sekolah" value="Swasta"> Swasta
+          <input type="checkbox" name="Status Sekolah" value="Internasional"> Internasional
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="jurusan">19. Jurusan</label>
+        <div class="input">
+          <input type="text" name="jurusan" id="jurusan"/>
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="no_ijazah">20. Nomor Ijazah</label>
+        <div class="input">
+          <input type="text" name="tgl_lulus" id="no_ijazah"/>
+        </div>
+      </div>
+      <br>
+      <div class="punya_rosnita">
+        <label class="label" for="tgl_lulus">21. Tanggal Lulus</label>
+        <div class="input">
+          <input type="text" name="tgl_lulus" id="tgl_lulus"/>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="form2">
+      <p class="catatan">Catatan : *) Beri tanda centang sesuai dengan pilihan</p>
+      <div class="tanggal_pengiriman">
+        <p>Cirebon, <input type="date" name="tanggal" id="tanggal" style="width: 98px;"></p>
+        <p><input type="text" name="" placeholder="Nama Lengkap" style="width: 98px;"></p>
+      </div>
+    </div>
+    <button onclick="alert('Oke')">Kirim</button>
+  </div>
+</body>
+</html>
