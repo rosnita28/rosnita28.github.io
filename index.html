@@ -1,49 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style type="text/css">
-        h1{
-        color: blue;
-        cursor: pointer;
-    }
-    h1:hover{
-        color: red;
-        letter-spacing: 2px;
-    }
-    img{
-        width: 4cm;
-        border-radius: 50%;
-        box-shadow: 1px 1px 4px gray;
-        padding: white;
-        margin: 15px;
-        transition: 0.2s;
-        opacity: 75%;
-    }
-    img:hover{
-        transform: scale(1.2);
-        opacity: 100%;
-        box-shadow: 1px 1px 6px black;
-    }
-    </style>
-    <body>
-<div class="content">
-		<h2>Hello Ini Adalah Github Pages Ku</h2>
-		<img src="foto.jpeg">
-		<h2>Rosnita Amalia</h2>
-		<h3>41215481</h3>
-		<h3>TI KIP P4</h3>
-		<button onclick="alert('Hi saya Rosnita Amalia seorang mahasiswi STMIK IKMI Cirebon yang sedang belajar HTML')">Hello JavaScript!</button>
-		<br>
-		<p>Pertemuan 3:</p>
-		<div class="tombol">
-			<button onclick="document.location.href = 'p03'">Tabel Sederhana</button>
-			<button onclick="document.location.href = 'p03css'">Tabel + CSS</button>
-			<button onclick="document.location.href = 'p03jquery'">Tabel + jQuery</button>
-		</div>
-	</div>
-    </body>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery FadeOut</title>
+	<link rel="stylesheet" type="text/css" href="css/punya_rosnita.css">
+</head>
+<body>
+	<h1>5 Teman Terbaik di IKMI</h1>
+	<table>
+		<thead>
+			<tr>
+				<th width="30">No</th>
+				<th>Nama</th>
+				<th>Alamat</th>
+				<th>Aksi</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr id="baris_1">
+				<td class="kolom">1</td>
+				<td class="kolom" id="nama_1">Rotika</td>
+				<td class="kolom">Plered</td>
+				<td><button class="kolom hapus" id="delete_1">Delete</button></td>
+			</tr>
+			<tr id="baris_2">
+				<td class="kolom">2</td>
+				<td class="kolom" id="nama_2">Nuraeni</td>
+				<td class="kolom">Pegambiran</td>
+				<td><button class="kolom hapus" id="delete_2">Delete</button></td>
+			</tr>
+			<tr id="baris_3">
+				<td class="kolom">3</td>
+				<td class="kolom" id="nama_3">Syifa</td>
+				<td class="kolom">Kedawung</td>
+				<td><button class="kolom hapus" id="delete_3">Delete</button></td>
+			</tr>
+			<tr id="baris_4">
+				<td class="kolom">4</td>
+				<td class="kolom" id="nama_4">Qonita</td>
+				<td class="kolom">Sumber</td>
+				<td><button class="kolom hapus" id="delete_4">Delete</button></td>
+			</tr>
+			<tr id="baris_5">
+				<td class="kolom">5</td>
+				<td class="kolom" id="nama_5">Sariah</td>
+				<td class="kolom">Palimanan</td>
+				<td><button class="kolom hapus" id="delete_5">Delete</button></td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<button class="kembali" onclick="document.location.href = '../'">Kembali</button>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript" src="js/my.js"></script>
+</body>
 </html>
