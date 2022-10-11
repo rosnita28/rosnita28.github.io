@@ -1,0 +1,66 @@
+body{
+	background-color: #eee;
+}
+
+img{
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	cursor: pointer;
+	width: 150px;
+	border-radius: 52%;
+	box-shadow: 1px 1px 4px rgb(219, 213, 212);
+	padding: 10px;
+	transition: 0.5s;
+}
+
+img:hover{
+	transform: scale(1.1);
+}
+
+h3{
+	text-align: center;
+}
+
+.content{
+	margin: 10%;
+}
+
+.tombol{
+	text-align: center;
+    background-color: rgb(8, 218, 255);
+	color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.tombol:hover{
+	background-color: rgb(36, 174, 187);
+}
+
+.isi{
+	background-color: white;
+    padding: 20px 20px 5px;
+    display: none;
+    text-align: justify;
+}
+
+.kembali{
+	border: none;
+	border-radius: 7px;
+	background-color: rgb(240, 163, 92);
+	color: white;
+	padding: 15px;
+	margin-top: 30px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.kembali:hover{
+	background-color: rgb(248, 122, 4);
+}
