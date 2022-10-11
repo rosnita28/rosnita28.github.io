@@ -1,0 +1,155 @@
+.content {
+    width: 95%;
+    margin: auto;
+    padding: 15px;
+}
+
+img {
+	width: 100%;
+}
+
+h1 {
+	text-align: center;
+}
+
+h3 {
+	margin: 20px 0 auto;
+}
+
+ol {
+	margin: 10px 0 2s0px;
+}
+
+.formulir {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(142, 215, 248);
+    padding: 25px;
+    box-sizing: border-box;
+    margin-top: 25px;
+    border-radius: 15px;
+}
+
+.judulform {
+    font-size: 29px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.masukkan, select {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 10px 0 20px;
+    display: inline-block;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+select {
+    background-color: #fff;
+    border: none;
+    font-size: 12px;
+    border: 1px solid #ccc;
+}
+
+input[type=date] {
+    background-color: #fff;
+    border: none;
+    font-size: 12px;
+    border: 1px solid #ccc;
+}
+
+input[type=file] {
+    background-color: #fff;
+    border: none;
+    font-size: 12px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+    transition: 0.2s;
+}
+
+.kembali {
+	background-color: red;
+}
+
+.kembali:hover {
+	background-color: darkred;
+}
+
+.submit {
+	background-color: rgb(123, 255, 0);
+	margin-top: 10px;
+}
+
+.submit:hover {
+	background-color: rgb(89, 145, 36);
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    ol li {
+        font-size: 12px;
+    }
+
+    .formulir {
+        padding: 15px;
+    }
+
+    .judulform {
+        font-size: 15px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    small {
+        font-size: 10px;
+    }
+
+    .masukkan, select {
+        padding: 5px 10px;
+        font-size: 11px;
+        margin: 5px 0 10px;
+    }
+
+    input[type=file] {
+        font-size: 11px;
+    }
+
+    button {
+        padding: 8px 10px;
+        margin: 3px 0;
+        cursor: pointer;
+        font-size: 10px;
+    }
+
+}
